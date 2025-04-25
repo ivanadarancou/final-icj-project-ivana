@@ -26,6 +26,11 @@ gulp.task('default', (done) => {
 // run default tasks and then serve locally
 gulp.task('dev', gulp.series('default', serve));
 
+gulp.task('images', () => {
+  return gulp.src('src/img/**/*')
+    .pipe(gulp.dest('docs/img'));
+});
+
 // Allow them to be called individually
 gulp.task(clear);
 gulp.task(fetch);

@@ -5,9 +5,9 @@ function format() {
   return gulp
     .src([
       './src/js/*.js',
-      './docs/*.html',
-      './docs/*/*.html',
       './src/js/*.js',
+      './docs/*.html',
+      './docs/*.html',
       './src/_data/*.json'
     ])
     .pipe(

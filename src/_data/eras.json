@@ -2,43 +2,43 @@
   "eras": [
     {
       "decade": 1960,
-      "slug": "Abbey Road",
+      "slug": "1960's - Abbey Road - The Beatles",
       "image": "/img/abbey-road.jpg",
       "blurb": "It’s wild how one photo — just four guys crossing the street — became one of the most iconic album covers of all time. Abbey Road isn’t just a Beatles record, it’s a symbol, and the story behind it is just as cool as the music. The photo was taken by Iain Macmillan, a friend of John Lennon’s, who climbed a ladder in the middle of the road and had only about ten minutes to get the shot. No fancy setup, no crowd control — just a quick photoshoot that turned into history. What makes it even more legendary? The cover doesn’t even have the band's name on it. Art director John Kosh decided they didn’t need it."
     },
     {
       "decade": "70s",
-      "slug": "Animals",
+      "slug": "1970s - Animals - Pink Floyd",
       "image": "/img/animals.jpg",
       "blurb": "While Abbey Road kept it simple and classic, Pink Floyd’s Animals went full-on conceptual. That floating pig above the London skyline? Totally real — well, almost. The band worked with longtime collaborator and design legend Storm Thorgerson (of the design group Hipgnosis) to create the now-famous image of a giant inflatable pig soaring between the towers of Battersea Power Station. The shoot didn’t go as planned — the pig broke free and actually floated into Heathrow Airport’s flight path, grounding planes and making headlines. But the chaos was worth it. The result was a moody, surreal cover that perfectly matched the album’s critique of society and capitalism. It’s gritty, industrial, and oddly beautiful — a perfect visual for the soundscape inside."
     },
     {
       "decade": "80s",
-      "slug": "Hot Space",
+      "slug": "1980s - Hot Space - Queen",
       "image": "/img/hot-space.jpg",
       "blurb": "Then there’s Hot Space — Queen’s polarizing 1982 album that ditched the stadium rock for funk and disco vibes. But let’s talk about that cover. Four brightly colored squares, each featuring a stylized portrait of a band member in pop-art silhouette — it’s minimal, graphic, and pure 80s energy. The design was a massive departure from the band’s earlier, more regal or mythical imagery. It was created by Freddie Mercury’s friend and longtime Queen collaborator Richard Gray, who leaned into the era’s love for bold shapes and brash color. The cover mirrored the music’s risk-taking — unexpected, funky, and unapologetically modern. Some fans didn’t get it at the time, but it’s aged into a cult favorite, often referenced in design circles for its punchy simplicity and bold shift in aesthetic."
     },
     {
       "decade": "90s",
-      "slug": "Four-Calendar Café",
+      "slug": "1990s - Four-Calendar Café - Cocteau Twins",
       "image": "/img/four-calendar-cafe.jpg",
       "blurb": "From the moment you see the cover of Four-Calendar Café, you know you’re stepping into something delicate and strange — just like the music inside. Released in 1993, this Cocteau Twins album marked a shift: it was their first on a major label, and the artwork reflected a more polished, surreal world. Designed by Paul West at v23 — the design studio closely linked with the 4AD label — the cover is a pastel dreamscape of abstract fruit and floral arrangements. It feels like a still from a dream or a moment of clarity in a foggy memory. There’s something oddly medical and sweet about it, like the album’s themes of healing, heartbreak, and emotional distance were translated into a visual language. It’s beautiful but off-kilter, and it lingers — just like Elizabeth Fraser’s vocals.\nThis one’s a masterclass in how to do soft surrealism right — and a reminder that album art doesn’t have to shout to leave an impression."
     },
     {
       "decade": "2000s",
-      "slug": "Demon Days",
+      "slug": "2000s - Demon Days - Gorillaz",
       "image": "/img/demon-days.jpg",
       "blurb": "By the time Demon Days dropped in 2005, Gorillaz weren’t just a band — they were a full-blown universe. And the album’s cover? A perfect snapshot of that world. Designed by artist and Gorillaz co-creator Jamie Hewlett, the artwork features the animated band members — 2D, Murdoc, Noodle, and Russel — in moody, profile-style squares. It’s a clear nod to The Beatles’ Let It Be cover, but here it’s darker, edgier, and dripping with dystopian cool. Each character is turned slightly away, each face holding a different story, hinting at the emotional weight and gritty commentary packed into the music. What makes this cover so effective is its simplicity. Four blocks, four characters, one deep vibe. It tells you everything without saying a word — and perfectly sets the tone for the album’s blend of hip-hop, melancholy, and post-millennial unease. Demon Days is one of those rare records where the visuals don’t just match the music — they expand it. Like a graphic novel in album form."
     },
     {
       "decade": "2010s",
-      "slug": "To Pimp a Butterfly",
+      "slug": "2010s - To Pimp a Butterfly - Kendrick Lamar",
       "image": "/img/to-pimp.jpeg",
       "blurb": "The graphic design of To Pimp a Butterfly by Kendrick Lamar is a striking reflection of the album’s complex themes and revolutionary message. The cover, designed by Anna Wise, features an evocative image of Kendrick surrounded by a group of African-American men posing in front of the White House, with a surreal, almost cinematic quality to the scene. The bold, symbolic imagery captures the album’s exploration of race, identity, and the pressures of fame. The design's use of contrasting colors, intricate textures, and layered visuals invites the viewer into a world that is both grounded in reality and filled with dreamlike abstraction. It’s a perfect visual counterpart to an album that pushes the boundaries of both music and art."
     },
     {
       "decade": "current",
-      "slug": "BRAT",
+      "slug": "2020s - BRAT - Charli XCX",
       "image": "/img/brat.jpg",
       "blurb": "BRAT by Charli XCX is a raw and rebellious exploration of self-expression and the complexities of modern identity. The artwork for this single features a bold and minimalist design that mirrors Charli’s experimental, genre-defying sound. The cover’s use of sharp lines, bright neon accents, and a digital aesthetic reflects the song's fast-paced, boundary-pushing energy. It's a visual representation of Charli's fearlessness and commitment to breaking norms in both music and style. The bold typography and glitchy, almost futuristic elements perfectly match the track's themes of empowerment, frustration, and liberation. It’s a visual statement that complements the song's anthem-like quality, speaking to the defiant spirit that has become a hallmark of Charli’s career."
     }
