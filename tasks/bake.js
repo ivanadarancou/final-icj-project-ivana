@@ -139,11 +139,12 @@ gulp
   .pipe(gulp.dest('docs'))
   .pipe(browserSync.stream());
 
-  gulp.task('copy-images', () => {
-    return gulp.src('src/images/**/*')
-      .pipe(gulp.dest('docs/images'));
+  gulp.task('images', () => {
+    return gulp.src('src/img/**/*')
+      .pipe(gulp.dest('docs/img'));
   });  
 
+  gulp.task('dev', gulp.series('images', 'bake'));
 
   resolve();
 }
