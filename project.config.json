@@ -10,14 +10,20 @@
       "type": "sheet",
       "name": "bookstores"
     }
+    ,
+    {
+      "fileId": "1o7SD-YwsYMkHlRckLGHpyKFAqRbvyl0tz22CK3XeH2M",
+      "type": "sheet",
+      "name": "eras"
+    }
   ],
   "to_bake": [
-    {
-      "template": "bake-book",
-      "data": "library",
-      "array": "books",
-      "slug": "slug",
-      "path": "books"
-    }
+   {
+    "data": "eras", 
+    "array": "eras", 
+    "slug": "slug", 
+    "template": "eras", 
+    "path": "eras"
+   }
   ]
 }

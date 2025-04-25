@@ -70,11 +70,7 @@ function bake(resolve) {
     if (!bake.template) {
       throw new Error('bake.template is undefined. Add a nunjucks template.');
     }
-    if (!bake.slug) {
-      throw new Error(
-        'bake.slug is undefined. Specify a key that will be used as the slug for the page.'
-      );
-    }
+    
     if (bake.path === null) {
       throw new Error(
         'bake.path is undefined. Specify a path where your pages will be baked.'
@@ -95,12 +91,12 @@ function bake(resolve) {
       );
     }
 
-    data.forEach((d) => {
-      if (!d[bake.slug]) {
-        throw new Error(
-          `d[${bake.slug}] is undefined. Specify a key that will be used as the slug for the page.`
-        );
-      }
+     data.forEach((d) => {
+       if (!d[bake.slug]) {
+         throw new Error(
+           `d[${bake.slug}] is undefined. Specify a key that will be used as the slug for the page.`
+         );
+       }
 
       if (!isValidGlob(`docs/${bake.path}/${d[bake.slug]}.html`)) {
         throw new Error(
@@ -127,6 +123,27 @@ function bake(resolve) {
         .pipe(browserSync.stream());
     });
   });
+
+  // --- Bake the main eras.html index page ---
+const erasData = fs.readJsonSync(`${dataDir}eras.json`);
+gulp
+  .src('src/_templates/eras.njk')
+  .pipe(gulpData(() => ({ eras: erasData.eras })))
+  .pipe(
+    nunjucksRender({
+      path: 'src',
+      manageEnv
+    })
+  )
+  .pipe(rename('eras.html'))
+  .pipe(gulp.dest('docs'))
+  .pipe(browserSync.stream());
+
+  gulp.task('copy-images', () => {
+    return gulp.src('src/images/**/*')
+      .pipe(gulp.dest('docs/images'));
+  });  
+
 
   resolve();
 }
