@@ -16,6 +16,12 @@
       "type": "sheet",
       "name": "eras"
     }
+    ,
+    {
+      "fileId": "17hRh-Dp4mUNGSuO-GflTdM2TJVO-1XvUtWV4qPTVlPw",
+      "type": "sheet",
+      "name": "artists"
+    }
   ],
   "to_bake": [
    {
@@ -25,5 +31,15 @@
     "template": "eras", 
     "path": "eras"
    }
+  ] 
+   ,
+  "to bake": [
+    {
+    "data": "artists", 
+    "array": "artists", 
+    "slug": "slug", 
+    "template": "artists", 
+    "path": "artists"
+    }
   ]
 }
