@@ -24,16 +24,6 @@
     }
   ],
   "to_bake": [
-   {
-    "data": "eras", 
-    "array": "eras", 
-    "slug": "slug", 
-    "template": "eras", 
-    "path": "eras"
-   }
-  ] 
-   ,
-  "to bake": [
     {
     "data": "artists", 
     "array": "artists", 
