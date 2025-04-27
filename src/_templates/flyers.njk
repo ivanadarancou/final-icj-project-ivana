@@ -1,0 +1,22 @@
+{% extends "_templates/base.njk" %}
+
+{% set title = "Iconic Music Flyers" %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Iconic Music Flyers Across Eras</h1>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {% for flyer in flyers %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="/img/{{ flyer.image }}" alt="{{ flyer.title }}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{ flyer.title }}</h5>
+          <p class="card-text">{{ flyer.description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

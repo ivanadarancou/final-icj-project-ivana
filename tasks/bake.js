@@ -154,6 +154,22 @@ function bake(resolve) {
     .pipe(gulp.dest('docs'))
     .pipe(browserSync.stream());
 
+    // --- Bake the flyers index page ---
+const flyersData = fs.readJsonSync(`${dataDir}flyers.json`);
+gulp
+  .src('src/_templates/flyers.njk')
+  .pipe(gulpData(() => ({ flyers: flyersData.flyers })))
+  .pipe(
+    nunjucksRender({
+      path: 'src',
+      manageEnv
+    })
+  )
+  .pipe(rename('flyers.html'))
+  .pipe(gulp.dest('docs'))
+  .pipe(browserSync.stream());
+
+
   gulp.task('images', () => {
     return gulp.src('src/img/**/*').pipe(gulp.dest('docs/img'));
   });

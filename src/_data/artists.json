@@ -1,7 +1,7 @@
 {
   "artists": [
     {
-      "slug": "reid-miles",
+      "slug": "reid",
       "name": "Reid Miles",
       "famous_for": "Blue Note Records (1950s–60s jazz covers)",
       "style": "Bold typography, minimalist layouts, stylish black-and-white photography.",
@@ -10,7 +10,7 @@
       "quotes": "\"It’s all about rhythm — not just in music, but in design.\""
     },
     {
-      "slug": "storm-thorgerson",
+      "slug": "storm",
       "name": "Storm Thorgerson (Hipgnosis)",
       "famous_for": "Pink Floyd (Dark Side of the Moon, Wish You Were Here), Led Zeppelin (Houses of the Holy)",
       "style": "Surreal, dreamlike, and thought-provoking photo-based designs. Helped redefine what an album cover could be — almost like album covers as fine art.",
@@ -19,8 +19,8 @@
       "quotes": "\"You don’t just design a cover; you create an atmosphere, a mystery.\""
     },
     {
-      "slug": "pete-saville",
-      "name": "Pete Saville",
+      "slug": "peter",
+      "name": "Peter Saville",
       "famous_for": "Joy Division (Unknown Pleasures), New Order",
       "style": "Minimalist, experimental, used scientific and abstract imagery with cool muted palettes.",
       "portrait": "peter-savilee.jpg",
@@ -28,7 +28,7 @@
       "quotes": "\"Design should be open to interpretation — like the music itself.\""
     },
     {
-      "slug": "barney-bubbles",
+      "slug": "barney",
       "name": "Barney Bubbles",
       "famous_for": "Elvis Costello, Ian Dury, Hawkwind",
       "style": "Playful, rebellious, mixed retro graphics with punk attitude — sometimes coded his work with hidden messages.",
@@ -37,7 +37,7 @@
       "quotes": "\"If you can read it easily, you’re doing it wrong.\""
     },
     {
-      "slug": "jean-paul-goude",
+      "slug": "jean",
       "name": "Jean-Paul Goude",
       "famous_for": "Grace Jones album covers like Island Life",
       "style": "Visually stunning photography combined with surreal graphic manipulation. Totally sculpted Grace Jones' visual persona.",
@@ -46,7 +46,7 @@
       "quotes": "\"Photography isn’t just capturing reality — it’s inventing a new one.\""
     },
     {
-      "slug": "art-kane",
+      "slug": "art",
       "name": "Art Kane",
       "famous_for": "Music photography for The Who, Cream, Bob Dylan, Frank Zappa",
       "style": "Bold color usage, narrative-driven photography that often felt cinematic and larger-than-life.",

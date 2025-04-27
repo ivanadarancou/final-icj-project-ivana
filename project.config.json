@@ -21,15 +21,20 @@
       "fileId": "17hRh-Dp4mUNGSuO-GflTdM2TJVO-1XvUtWV4qPTVlPw",
       "type": "sheet",
       "name": "artists"
+    },
+    {
+      "fileId": "160SKQ-knoGXLhW-M1uekfYZUK60fkCtj4K5nAgLuv5M",
+      "type": "sheet",
+      "name": "flyers"
     }
   ],
   "to_bake": [
     {
-    "data": "artists", 
-    "array": "artists", 
-    "slug": "slug", 
-    "template": "artists", 
-    "path": "artists"
-    }
+      "template": "flyers",    
+      "slug": "slug",         
+      "path": "",               
+      "data": "flyers",         
+      "array": "flyers"    
+    } 
   ]
 }

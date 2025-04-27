@@ -8,7 +8,7 @@
 <div class="container">
   <h1>Visions of Sound: Iconic Design in Music Culture</h1>
   <p>From the surreal imagery of Pink Floyd’s Animals to the timeless stroll of The Beatles’ Abbey Road, graphic design has long been a silent partner in shaping music’s visual legacy. This site explores the powerful intersection of sound and image — spotlighting legendary album covers, unforgettable tour flyers, and the designers behind the visuals that defined generations. Whether plastered on bedroom walls or flipped through in dusty vinyl crates, these designs don’t just promote music — they become part of it.</p>
-  <h2>Library books loop</h2>
+  <h2>Explore Different Categories</h2>
   <p>This loops through data that came from a Google Docs example.</p>
   <div class="row">
     {% for book in library.books %}
@@ -18,13 +18,5 @@
       </div>
     {% endfor %}
   </div>
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
-  {% endfor %}
 </div>
 {% endblock %}

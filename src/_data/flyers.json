@@ -1,0 +1,40 @@
+{
+  "flyers": [
+    {
+      "slug": "70s",
+      "title": "CBGB Punk Night, 1977",
+      "image": "70-flyer.jpeg",
+      "description": "Gritty black-and-white Xerox flyer for The Ramones, Blondie, Talking Heads at CBGB in New York. Messy, DIY aesthetic."
+    },
+    {
+      "slug": "sex-pistols",
+      "title": "Sex Pistols at 100 Club, 1976",
+      "image": "sex-pistols-flyer.jpeg",
+      "description": "chaotic, ransom-note typography style."
+    },
+    {
+      "slug": "hacienda",
+      "title": "The Hacienda Acid House Party, 1988",
+      "image": "hacienda-flyer.jpeg",
+      "description": "Legendary Manchester club — sleek minimal designs (Peter Saville style)."
+    },
+    {
+      "slug": "lolla",
+      "title": "Lollapalooza First Tour, 1991",
+      "image": "lolla-flyer.jpeg",
+      "description": "First Lolla tour: Jane's Addiction, Nine Inch Nails, Ice-T."
+    },
+    {
+      "slug": "nirvana",
+      "title": "Nirvana at Crocodile Cafe, 1989",
+      "image": "nirvana-flyer.jpeg",
+      "description": "Nirvana, Pearl Jam, Soundgarden in tiny clubs. Xerox look, rough type, moody dark colors."
+    },
+    {
+      "slug": "daft punk",
+      "title": "Daft Punk Alive Tour, 2006",
+      "image": "daft-punk-flyer.jpeg",
+      "description": "Futuristic neon pyramid visuals."
+    }
+  ]
+}
