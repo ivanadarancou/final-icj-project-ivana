@@ -4,7 +4,15 @@
 
 {% block content %}
 <div class="container py-5">
-  <h1 class="mb-4">Graphic Designers Who Shaped Music</h1>
+  <h1 class="mb-4 text-center">Graphic Designers Who Shaped Music</h1>
+
+  <p class="lead mb-4">
+  Throughout music history, visionary graphic designers have transformed sound into unforgettable visuals. 
+  Their album covers, tour posters, and promotional art don't just complement the music — they define eras, 
+  influence culture, and leave a lasting imprint on generations of fans. 
+  This page celebrates the artists whose designs shaped the way we see (and feel) music.
+</p>
+
 
   {% for artist in artists %}
     <div class="text-center mb-3">
@@ -13,6 +21,7 @@
   <img src="/img/{{ artist.portrait }}" alt="{{ artist.name }}" class="img-fluid rounded img-small mb-3">
   {% endif %}
   
+    <section class="bg-light py-5 mt-5">
   <p><strong>Famous For:</strong> {{ artist.famous_for }}</p>
   <p><strong>Style:</strong> {{ artist.style }}</p>
   
@@ -23,7 +32,7 @@
   {% endif %}
 
   {% if artist.artwork %}
-  <img src="/img/{{ artist.artwork }}" alt="{{ artist.name }} artwork" class="img-fluid rounded img-small mt-3">
+  <img src="/img/{{ artist.artwork }}" alt="{{ artist.name }} artwork" class="img-fluid rounded img-small mb-3">
   {% endif %}
 </div>
 

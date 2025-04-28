@@ -15,16 +15,6 @@
               <li class="nav-item">
                <a class="nav-link" href="{{ relative_path }}flyers.html">Iconic Flyers</a>
               </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Support Our Research
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {% for book in library.books %}
-            <li><a class="dropdown-item" href="{{ relative_path }}books/{{ book.slug}}.html">{{ book.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
       </ul>
     </div>
   </div>

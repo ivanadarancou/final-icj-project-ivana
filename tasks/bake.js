@@ -169,12 +169,35 @@ gulp
   .pipe(gulp.dest('docs'))
   .pipe(browserSync.stream());
 
+  // --- Bake the main index page ---
+
+
 
   gulp.task('images', () => {
     return gulp.src('src/img/**/*').pipe(gulp.dest('docs/img'));
   });
 
   gulp.task('dev', gulp.series('images', 'bake'));
+
+  const homepageData = {
+    eras: erasData.eras,
+    artists: artistsData.artists,
+    flyers: flyersData.flyers
+  };
+  
+  gulp
+    .src('src/_templates/index.njk')
+    .pipe(gulpData(() => homepageData))
+    .pipe(
+      nunjucksRender({
+        path: 'src',
+        manageEnv
+      })
+    )
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest('docs'))
+    .pipe(browserSync.stream());
+  
 
   resolve();
 }

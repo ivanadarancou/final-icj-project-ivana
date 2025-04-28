@@ -1,0 +1,58 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Home Page{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+  <h1>Visions of Sound: Iconic Design in Music Culture</h1>
+  <p>From the surreal imagery of Pink Floyd’s Animals to the timeless stroll of The Beatles’ Abbey Road, graphic design has long been a silent partner in shaping music’s visual legacy. This site explores the powerful intersection of sound and image — spotlighting legendary album covers, unforgettable tour flyers, and the designers behind the visuals that defined generations. Whether plastered on bedroom walls or flipped through in dusty vinyl crates, these designs don’t just promote music — they become part of it.</p>
+  
+  <h2>Explore Different Categories</h2>
+  <div class="row">
+     <!-- Eras Section -->
+    <div class="col-sm-4 mb-4">
+
+      {% if eras.length > 0 %}
+      <div class="text-center">
+        <img src="{{ eras[6].image }}" alt="{{ eras[0].album }}" class="img-fluid rounded mb-3" style="max-width: 100%;">
+        <h3><a href="/eras.html">Explore Eras</a></h3>
+        <a href="/eras.html" class="btn btn-primary">Learn More</a>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Artists Section -->
+    <div class="col-sm-4 mb-4">
+      {% if artists.length > 0 %}
+      <div class="text-center">
+        <img src="/img/{{ artists[0].portrait }}" alt="{{ artists[0].name }}" class="img-fluid rounded mb-3" style="max-width: 100%;">
+        <h3><a href="/artists.html">Explore Artists</a></h3>
+        <a href="/artists.html" class="btn btn-primary">Explore More</a>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Flyers Section -->
+    <div class="col-sm-4 mb-4">
+      {% if flyers.length > 0 %}
+      <div class="text-center">
+        <img src="/img/{{ flyers[0].image }}" alt="{{ flyers[0].title }}" class="img-fluid rounded mb-3" style="max-width: 100%;">
+         <h3><a href="/flyers.html">Explore Flyers</a></h3>
+        <a href="/flyers.html" class="btn btn-primary">See More</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+<section class="bg-light py-5 mt-5">
+  <div class="container text-center">
+    <h2>About Our Collective</h2>
+    <p class="lead">Visions of Sound is curated by a group of passionate graphic designers and music enthusiasts who believe that the visual side of music deserves just as much attention as the sound. From iconic album covers to underground flyers, we celebrate the artists behind the visuals that defined generations.</p>
+    <p>Our team brings together backgrounds in design, art history, and music culture to create a space where sound and image collide. We aim to honor the legacy of graphic design in music and inspire the next wave of creators.</p>
+  </div>
+</section>
+
+</div>
+{% endblock %}
