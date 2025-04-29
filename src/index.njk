@@ -2,62 +2,59 @@
 
 {% block page_title %}Home Page{% endblock %}
 
-{% block page_description %}The index search description for this page goes here.{% endblock %}
-
 {% block content %}
 <div class="container text-center">
   <h1>Visions of Sound: Iconic Design in Music Culture</h1>
   <p>From the surreal imagery of Pink Floyd’s Animals to the timeless stroll of The Beatles’ Abbey Road, graphic design has long been a silent partner in shaping music’s visual legacy. This site explores the powerful intersection of sound and image — spotlighting legendary album covers, unforgettable tour flyers, and the designers behind the visuals that defined generations. Whether plastered on bedroom walls or flipped through in dusty vinyl crates, these designs don’t just promote music — they become part of it.</p>
-  
+
   <section class="py-5 text-center">
-  <div class="container">
-    <h2>Featured Sections</h2>
-    <div class="row mt-4">
+    <div class="container">
+      <h2>Featured Sections</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="/img/reid-miles.jpg" class="card-img-top" alt="Artists Preview">
+            <div class="card-body">
+              <h5 class="card-title">Legendary Designers</h5>
+              <p class="card-text">Explore the visionaries who shaped the look of music history.</p>
+              <a href="/artists.html" class="btn btn-primary">Meet the Artists</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="col-md-6 mb-4">
-        <div class="card shadow-sm h-100">
-          <img src="/img/reid-miles.jpg" class="card-img-top" alt="Artists Preview">
-          <div class="card-body">
-            <h5 class="card-title">Legendary Designers</h5>
-            <p class="card-text">Explore the visionaries who shaped the look of music history.</p>
-            <a href="/artists.html" class="btn btn-primary">Meet the Artists</a>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="/img/70-flyer.jpeg" class="card-img-top" alt="Flyers Preview">
+            <div class="card-body">
+              <h5 class="card-title">Iconic Flyers</h5>
+              <p class="card-text">Dive into the most unforgettable music flyers from every era.</p>
+              <a href="/flyers.html" class="btn btn-primary">View the Flyers</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/70-flyer.jpeg" class="card-img-top" alt="Flyers Preview">
-          <div class="card-body">
-            <h5 class="card-title">Iconic Flyers</h5>
-            <p class="card-text">Dive into the most unforgettable music flyers from every era.</p>
-            <a href="/flyers.html" class="btn btn-primary">View the Flyers</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
   </section>
 
-  <h2>Explore Different Album Art for each Era in Time</h2>
+  <h2>Explore Different Album Art for Each Era in Time</h2>
   <div class="container">
-  <p>Every album cover is a little snapshot of its time — a frozen moment of sound, style, and culture. This page explores how different eras used graphic design and photography to tell their own stories, from the simple to the surreal. These visuals didn’t just package the music — they became part of the way we remember it. Let’s flip through the decades, one iconic cover at a time.</p>
-
+    <p>Every album cover is a little snapshot of its time — a frozen moment of sound, style, and culture. This page explores how different eras used graphic design and photography to tell their own stories, from the simple to the surreal. These visuals didn’t just package the music — they became part of the way we remember it. Let’s flip through the decades, one iconic cover at a time.</p>
   </div>
-   <div class="row">
-   {% for era in eras.eras %}
-   <div class="col-sm-4 mb-4">
-     <img src="{{ era.image }}" alt="{{ era.album }}" class="img-fluid">
-     <h3><a href="eras/{{ era.slug }}.html">{{ era.album }}</a></h3>
-   </div>
-  {% endfor %}
-
- <section id="about" class="bg-light py-5 mt-5">
-  <div class="container text-center">
-    <h2>About Our Collective</h2>
-    <p class="lead">Visions of Sound is curated by a group of passionate graphic designers and music enthusiasts who believe that the visual side of music deserves just as much attention as the sound. From iconic album covers to underground flyers, we celebrate the artists behind the visuals that defined generations.
-    Our team brings together backgrounds in design, art history, and music culture to create a space where sound and image collide. We aim to honor the legacy of graphic design in music and inspire the next wave of creators.</p>
+  
+  <div class="row">
+    {% for era in eras.eras %}
+      <div class="col-sm-4 mb-4">
+        <img src="{{ era.image }}" alt="{{ era.album }}" class="img-fluid">
+        <h3><a href="eras/{{ era.slug }}.html">{{ era.album }}</a></h3>
+      </div>
+    {% endfor %}
   </div>
- </section>
+
+  <section id="about" class="bg-light py-5 mt-5">
+    <div class="container text-center">
+      <h2>About Our Collective</h2>
+      <p class="lead">Visions of Sound is curated by a group of passionate graphic designers and music enthusiasts who believe that the visual side of music deserves just as much attention as the sound. From iconic album covers to underground flyers, we celebrate the artists behind the visuals that defined generations. Our team brings together backgrounds in design, art history, and music culture to create a space where sound and image collide. We aim to honor the legacy of graphic design in music and inspire the next wave of creators.</p>
+    </div>
+  </section>
+</div>
 {% endblock %}
