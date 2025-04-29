@@ -6,27 +6,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Design in Music</a>
+    <a class="navbar-brand" href="/">Design in Music</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="eras.html">Graphics by Eras</a>
-             </li>
-              <li class="nav-item">
-               <a class="nav-link" href="artists.html">Artists featured</a>
+               <a class="nav-link" href="/artists.html">Artists featured</a>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href="flyers.html">Iconic Flyers</a>
+               <a class="nav-link" href="/flyers.html">Iconic Flyers</a>
               </li>
+              <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -44,52 +44,87 @@
   <h1>Visions of Sound: Iconic Design in Music Culture</h1>
   <p>From the surreal imagery of Pink Floyd’s Animals to the timeless stroll of The Beatles’ Abbey Road, graphic design has long been a silent partner in shaping music’s visual legacy. This site explores the powerful intersection of sound and image — spotlighting legendary album covers, unforgettable tour flyers, and the designers behind the visuals that defined generations. Whether plastered on bedroom walls or flipped through in dusty vinyl crates, these designs don’t just promote music — they become part of it.</p>
   
-  <h2>Explore Different Categories</h2>
-  <div class="row">
-     <!-- Eras Section -->
-    <div class="col-sm-4 mb-4">
+  <section class="py-5 text-center">
+  <div class="container">
+    <h2>Featured Sections</h2>
+    <div class="row mt-4">
 
-      
-      <div class="text-center">
-        <img src="/img/brat.jpg" alt="1960&#39;s - Abbey Road - The Beatles" class="img-fluid rounded mb-3" style="max-width: 100%;">
-        <h3><a href="/eras.html">Explore Eras</a></h3>
-        <a href="/eras.html" class="btn btn-primary">Learn More</a>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="/img/reid-miles.jpg" class="card-img-top" alt="Artists Preview">
+          <div class="card-body">
+            <h5 class="card-title">Legendary Designers</h5>
+            <p class="card-text">Explore the visionaries who shaped the look of music history.</p>
+            <a href="/artists.html" class="btn btn-primary">Meet the Artists</a>
+          </div>
+        </div>
       </div>
-      
-    </div>
 
-    <!-- Artists Section -->
-    <div class="col-sm-4 mb-4">
-      
-      <div class="text-center">
-        <img src="/img/reid-miles.jpg" alt="Reid Miles" class="img-fluid rounded mb-3" style="max-width: 100%;">
-        <h3><a href="/artists.html">Explore Artists</a></h3>
-        <a href="/artists.html" class="btn btn-primary">Explore More</a>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="/img/70-flyer.jpeg" class="card-img-top" alt="Flyers Preview">
+          <div class="card-body">
+            <h5 class="card-title">Iconic Flyers</h5>
+            <p class="card-text">Dive into the most unforgettable music flyers from every era.</p>
+            <a href="/flyers.html" class="btn btn-primary">View the Flyers</a>
+          </div>
+        </div>
       </div>
-      
-    </div>
 
-    <!-- Flyers Section -->
-    <div class="col-sm-4 mb-4">
-      
-      <div class="text-center">
-        <img src="/img/70-flyer.jpeg" alt="CBGB Punk Night, 1977" class="img-fluid rounded mb-3" style="max-width: 100%;">
-         <h3><a href="/flyers.html">Explore Flyers</a></h3>
-        <a href="/flyers.html" class="btn btn-primary">See More</a>
-      </div>
-      
     </div>
   </div>
+  </section>
 
-<section class="bg-light py-5 mt-5">
+  <h2>Explore Different Album Art for each Era in Time</h2>
+  <div class="container">
+  <p>Every album cover is a little snapshot of its time — a frozen moment of sound, style, and culture. This page explores how different eras used graphic design and photography to tell their own stories, from the simple to the surreal. These visuals didn’t just package the music — they became part of the way we remember it. Let’s flip through the decades, one iconic cover at a time.</p>
+
+  </div>
+   <div class="row">
+   
+   <div class="col-sm-4 mb-4">
+     <img src="/img/abbey-road.jpg" alt="1960&#39;s - Abbey Road - The Beatles" class="img-fluid">
+     <h3><a href="eras/1960.html">1960&#39;s - Abbey Road - The Beatles</a></h3>
+   </div>
+  
+   <div class="col-sm-4 mb-4">
+     <img src="/img/animals.jpg" alt="1970&#39;s - Animals - Pink Floyd" class="img-fluid">
+     <h3><a href="eras/70s.html">1970&#39;s - Animals - Pink Floyd</a></h3>
+   </div>
+  
+   <div class="col-sm-4 mb-4">
+     <img src="/img/hot-space.jpg" alt="1980&#39;s - Hot Space - Queen" class="img-fluid">
+     <h3><a href="eras/80s.html">1980&#39;s - Hot Space - Queen</a></h3>
+   </div>
+  
+   <div class="col-sm-4 mb-4">
+     <img src="/img/four-calendar-cafe.jpg" alt="1990&#39;s - Four-Calendar Cafe - Cocteau Twins" class="img-fluid">
+     <h3><a href="eras/90s.html">1990&#39;s - Four-Calendar Cafe - Cocteau Twins</a></h3>
+   </div>
+  
+   <div class="col-sm-4 mb-4">
+     <img src="/img/demon-days.jpg" alt="2000&#39;s - Demon Days - Gorillaz" class="img-fluid">
+     <h3><a href="eras/2000s.html">2000&#39;s - Demon Days - Gorillaz</a></h3>
+   </div>
+  
+   <div class="col-sm-4 mb-4">
+     <img src="/img/to-pimp.jpeg" alt="2010&#39;s - To Pimp a Butterfly - Kendrick Lamar" class="img-fluid">
+     <h3><a href="eras/2010s.html">2010&#39;s - To Pimp a Butterfly - Kendrick Lamar</a></h3>
+   </div>
+  
+   <div class="col-sm-4 mb-4">
+     <img src="/img/brat.jpg" alt="2020&#39;s - BRAT - Charli XCX" class="img-fluid">
+     <h3><a href="eras/current.html">2020&#39;s - BRAT - Charli XCX</a></h3>
+   </div>
+  
+
+ <section id="about" class="bg-light py-5 mt-5">
   <div class="container text-center">
     <h2>About Our Collective</h2>
-    <p class="lead">Visions of Sound is curated by a group of passionate graphic designers and music enthusiasts who believe that the visual side of music deserves just as much attention as the sound. From iconic album covers to underground flyers, we celebrate the artists behind the visuals that defined generations.</p>
-    <p>Our team brings together backgrounds in design, art history, and music culture to create a space where sound and image collide. We aim to honor the legacy of graphic design in music and inspire the next wave of creators.</p>
+    <p class="lead">Visions of Sound is curated by a group of passionate graphic designers and music enthusiasts who believe that the visual side of music deserves just as much attention as the sound. From iconic album covers to underground flyers, we celebrate the artists behind the visuals that defined generations.
+    Our team brings together backgrounds in design, art history, and music culture to create a space where sound and image collide. We aim to honor the legacy of graphic design in music and inspire the next wave of creators.</p>
   </div>
-</section>
-
-</div>
+ </section>
 
 
     <footer>

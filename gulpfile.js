@@ -26,39 +26,8 @@ gulp.task('default', (done) => {
 // run default tasks and then serve locally
 gulp.task('dev', gulp.series('default', serve));
 
-gulp.task('images', () => {
-  return gulp.src('src/img/**/*')
-    .pipe(gulp.dest('docs/img'));
-});
-
-gulp.task('artists', () => {
-  return gulp.src('src/templates/artists.njk')
-    .pipe(nunjucksRender({
-      path: ['src/templates/'] // Path to your templates
-    }))
-    .pipe(rename('artists.html')) // Rename output file
-    .pipe(gulp.dest('docs/')); // Output to your destination folder
-});
-
-gulp.task('html', function() {
-  return gulp.src('src/pages/**/*.njk')
-    .pipe(nunjucksRender({
-      path: ['src/templates'] // Make sure your templates are in the correct path
-    }))
-    .pipe(gulp.dest('docs'))
-    .on('end', function() {
-      console.log('Gulp has completed processing HTML files!');
-    });
-});
-
-
-
-
 
 // Allow them to be called individually
 gulp.task(clear);
 gulp.task(fetch);
 gulp.task(format);
-
-
-

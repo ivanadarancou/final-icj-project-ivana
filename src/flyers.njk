@@ -1,6 +1,5 @@
-{% extends "_templates/base.njk" %}
+{% extends '_templates/base.njk' %}
 
-{% set title = "Iconic Music Flyers" %}
 
 {% block content %}
 <div class="container py-5">
@@ -12,7 +11,7 @@
 </p>
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-    {% for flyer in flyers %}
+    {% for flyer in flyers.flyers %}
     <div class="col">
       <div class="card h-100">
         <img src="/img/{{ flyer.image }}" alt="{{ flyer.title }}" class="card-img-top">

@@ -70,7 +70,11 @@ function bake(resolve) {
     if (!bake.template) {
       throw new Error('bake.template is undefined. Add a nunjucks template.');
     }
-
+    if (!bake.slug) {
+      throw new Error(
+        'bake.slug is undefined. Specify a key that will be used as the slug for the page.'
+      );
+    }
     if (bake.path === null) {
       throw new Error(
         'bake.path is undefined. Specify a path where your pages will be baked.'
@@ -123,81 +127,6 @@ function bake(resolve) {
         .pipe(browserSync.stream());
     });
   });
-
-  // --- Bake the artists.html page ---
-  const artistsData = fs.readJsonSync(`${dataDir}artists.json`);
-  gulp
-    .src('src/_templates/artists.njk')
-    .pipe(gulpData(() => ({ artists: artistsData.artists })))
-    .pipe(
-      nunjucksRender({
-        path: 'src',
-        manageEnv
-      })
-    )
-    .pipe(rename('artists.html'))
-    .pipe(gulp.dest('docs'))
-    .pipe(browserSync.stream());
-
-  // --- Bake the main eras.html index page ---
-  const erasData = fs.readJsonSync(`${dataDir}eras.json`);
-  gulp
-    .src('src/_templates/eras.njk')
-    .pipe(gulpData(() => ({ eras: erasData.eras })))
-    .pipe(
-      nunjucksRender({
-        path: 'src',
-        manageEnv
-      })
-    )
-    .pipe(rename('eras.html'))
-    .pipe(gulp.dest('docs'))
-    .pipe(browserSync.stream());
-
-    // --- Bake the flyers index page ---
-const flyersData = fs.readJsonSync(`${dataDir}flyers.json`);
-gulp
-  .src('src/_templates/flyers.njk')
-  .pipe(gulpData(() => ({ flyers: flyersData.flyers })))
-  .pipe(
-    nunjucksRender({
-      path: 'src',
-      manageEnv
-    })
-  )
-  .pipe(rename('flyers.html'))
-  .pipe(gulp.dest('docs'))
-  .pipe(browserSync.stream());
-
-  // --- Bake the main index page ---
-
-
-
-  gulp.task('images', () => {
-    return gulp.src('src/img/**/*').pipe(gulp.dest('docs/img'));
-  });
-
-  gulp.task('dev', gulp.series('images', 'bake'));
-
-  const homepageData = {
-    eras: erasData.eras,
-    artists: artistsData.artists,
-    flyers: flyersData.flyers
-  };
-  
-  gulp
-    .src('src/_templates/index.njk')
-    .pipe(gulpData(() => homepageData))
-    .pipe(
-      nunjucksRender({
-        path: 'src',
-        manageEnv
-      })
-    )
-    .pipe(rename('index.html'))
-    .pipe(gulp.dest('docs'))
-    .pipe(browserSync.stream());
-  
 
   resolve();
 }

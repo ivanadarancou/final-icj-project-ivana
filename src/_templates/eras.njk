@@ -1,13 +1,11 @@
 {% extends "_templates/base.njk" %}
 
-{% set title = "Graphics by Eras" %}
-
 {% block content %}
 <div class="container">
   <h1>Visual Time Capsules</h1>
   <p>Every album cover is a little snapshot of its time — a frozen moment of sound, style, and culture. This page explores how different eras used graphic design and photography to tell their own stories, from the simple to the surreal. These visuals didn’t just package the music — they became part of the way we remember it. Let’s flip through the decades, one iconic cover at a time.</p>
 </div>
-<div class="container py-4">
+{# <div class="container py-4">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     {% for album in eras %}
     <div class="col">
@@ -26,5 +24,5 @@
     </div>
     {% endfor %}
   </div>
-</div>
+</div> #}
 {% endblock %}
